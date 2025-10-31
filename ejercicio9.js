@@ -33,3 +33,10 @@ function findOldestXMen(xMen) {
   // Fin de la función
 }
 findOldestXMen(xMen)
+/*
+Este miembro es de los más antiguos:  Cyclops
+Este miembro es de los más antiguos:  Phoenix
+Este miembro es de los más antiguos:  Beast
+Este miembro es de los más antiguos:  Magneto
+Este miembro es de los más antiguos:  Professor X
+*/

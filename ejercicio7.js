@@ -48,7 +48,7 @@ while (j < genres.length) {
   k++
   j++
 }
-//console.log('songsbygenre=', songsbygenre)
+console.log('songsbygenre=', songsbygenre)
 for (const i of tracks) {
   for (let j = 0; j < genres.length; j++) {
     if (i.genre === genres[j]) {
