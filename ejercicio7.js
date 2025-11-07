@@ -19,9 +19,7 @@ const tracks = [
 const genres = []
 let vargen = 0
 for (const i of tracks) {
-  //console.log(i)
   genres[vargen] = i.genre
-
   vargen++
 }
 //console.log(genres)

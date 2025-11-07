@@ -20,22 +20,22 @@ const rockPlaylist = []
 const playlist = []
 let k = 0
 for (const i of songs) {
-  if ((i.genre = 'Rock' && i.duration > 5.0)) {
+  if (i.genre === 'Rock' && i.duration > 5.0) {
     playlist[k] = i
     k++
   }
 }
 console.log(
-  'La lista elegida de canciones rock con duración superior a 5 minutos es: ',
+  'La lista elegida, de canciones rock con duración superior a 5 minutos es: ',
   playlist
 )
 /*PS C:\Users\Rafael\Desktop\repositorios curso ciber\ejercicios_bucles_funciones_js> node ejercicio3.js
-La lista elegida de canciones rock con duración superior a 5 minutos es:  [
-  { title: 'Bohemian Rhapsody', genre: true, duration: 5.55 },
-  { title: 'Stairway to Heaven', genre: true, duration: 7.58 },
-  { title: 'Hotel California', genre: true, duration: 6.31 },
-  { title: 'Sweet Child o Mine', genre: true, duration: 5.56 },
-  { title: 'Smells Like Teen Spirit', genre: true, duration: 5.01 },
-  { title: 'Comfortably Numb', genre: true, duration: 6.23 },
-  { title: 'Wish You Were Here', genre: true, duration: 5.34 }
+La lista elegida,de canciones rock con duración superior a 5 minutos es:  [
+ { title: 'Bohemian Rhapsody', genre: 'Rock', duration: 5.55 },
+  { title: 'Stairway to Heaven', genre: 'Rock', duration: 7.58 },
+  { title: 'Hotel California', genre: 'Rock', duration: 6.31 },
+  { title: 'Sweet Child o Mine', genre: 'Rock', duration: 5.56 },
+  { title: 'Smells Like Teen Spirit', genre: 'Rock', duration: 5.01 },
+  { title: 'Comfortably Numb', genre: 'Rock', duration: 6.23 },
+  { title: 'Wish You Were Here', genre: 'Rock', duration: 5.34 }
 ]*/

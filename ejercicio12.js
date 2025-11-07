@@ -26,6 +26,19 @@ const mutants = [
   { name: 'Colossus', power: 'steel skin' },
   { name: 'Nightcrawler', power: 'regeneration' }
 ]*/
+// Dos mutantes con el mismo poder "regeneration"
+const mutants = [
+  { name: 'Wolverine', power: 'regeneration' },
+  { name: 'Magneto', power: 'magnetism' },
+  { name: 'Professor X', power: 'telepathy' },
+  { name: 'Jean Grey', power: 'regeneration' },
+  { name: 'Rogue', power: 'power absorption' },
+  { name: 'Storm', power: 'weather manipulation' },
+  { name: 'Mystique', power: 'generation' },
+  { name: 'Beast', power: 'superhuman strength' },
+  { name: 'Colossus', power: 'steel skin' },
+  { name: 'Nightcrawler', power: 'generation' }
+]
 
 function findMutantByPower(mutant, power) {
   // insert code
@@ -41,27 +54,17 @@ function findMutantByPower(mutant, power) {
     if (i.power === power && i.name === mutant) {
       console.log('El mutante existe y es: ', i.name)
       mut = 'yes'
-      //countmutants++
-      //console.log('la variable countmutants vale: ', countmutants)
     }
     if (i.power === power && i.name !== mutant) {
       mutwithpower[k] = i.name
       k++
       countpowers++
-      // console.log('la variable countpowers vale: ', countpowers)
-
-      // console.log(countpowers)
     }
-  } // fin de bucle for of que recorre el array mutants
-  /*if (i.name !== mutant) {
-      mut = false
-    }*/
-
+  }
   if (mut !== 'yes') {
     console.log('El mutante, con ese poder, no existe')
     return
   }
-  //if(mut==="yes"&&)
   if (countpowers > 2) {
     console.log(
       'Hay otros ',
@@ -70,17 +73,10 @@ function findMutantByPower(mutant, power) {
       mutwithpower
     )
   } else if (countpowers > 1) {
-    console.log('Hay otro mutante y es:', mutwithpower)
+    console.log('Hay otro mutante con ese poder y es:', mutwithpower)
   }
 } // fin de la función
-// La variable othermutant nos dirá si hay más mutantes con el mismo poder y cuantos son
-//othermutant = countpowers - countmutants
-
-//console.log('Hay otro/s', countpowers - countmutants, 'mutante/s')
-//console.log('la variable count vale: ', count)
-//console.log('la variable mut vale: ', mut)
-
-findMutantByPower('Magneto', 'escalador')
+findMutantByPower('Wolverine', 'regeneration')
 //! RESULTADOS:
 //? VARIANTE 1) Con el array mutants inicial
 /*PS C:\Users\Rafael\Desktop\repositorios curso ciber\ejercicios_bucles_funciones_js> node ejercicio12.js
@@ -111,3 +107,7 @@ El mutante, con ese poder, no existe
 /*PS C:\Users\Rafael\Desktop\repositorios curso ciber\ejercicios_bucles_funciones_js> node ejercicio12.js
 El mutante, con ese poder, no existe
  */
+//? VARIANTE 5) Solo hay dos mutantes con ese poder. La llamada de la función y los parámetros es la siguiente: findMutantByPower('Wolverine', 'regeneration')
+/*El mutante existe y es:  Wolverine
+Hay otro mutante con ese poder y es: [ 'Jean Grey' ]
+*/

@@ -24,11 +24,16 @@ for (const i of cartoons) {
   k++
 }
 ages.sort()
-console.log(ages)
 // Seguidament buscamos en el array cartoons la película más antigua.
 for (const i of cartoons) {
   if (i.debut === ages[0]) {
     oldestcartoon = i
   }
 }
-console.log(oldestcartoon)
+console.log(
+  'La película animada más antigua es: ',
+  oldestcartoon.name,
+  ',estrenada en el año:',
+  oldestcartoon.debut
+)
+// La película animada más antigua es:  Mickey Mouse ,estrenada en el año: 1928

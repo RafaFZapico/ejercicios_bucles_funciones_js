@@ -15,22 +15,31 @@ const actors = [
 ]
 //console.log(actors)
 function calculateActorsAges(actors) {
-  // console.log(actors)
   // insert code,
   // calculamos el año actual
   let fechactual = new Date()
   let añoactual = fechactual.getFullYear()
-  console.log(añoactual)
+  console.log('El año en curso es:', añoactual)
   // creamos el nuevo array con el nombre y la edad de los actores
   let k = 0
   const actorsage = []
-  //console.log(actors)
-
   for (const i of actors) {
-    // console.log(i.name)
     let object = { name: i.name, age: añoactual - i.born }
     actorsage.push(object)
   }
-  console.log(actorsage)
+  console.log('El listado de actores con sus edades es: ', actorsage)
 }
 calculateActorsAges(actors)
+/*El año en curso es: 2025
+El listado de actores con sus edades es:  [
+  { name: 'Leonardo DiCaprio', age: 51 },
+  { name: 'Tom Hanks', age: 69 },
+  { name: 'Meryl Streep', age: 76 },
+  { name: 'Brad Pitt', age: 62 },
+  { name: 'Johnny Depp', age: 62 },
+  { name: 'Scarlett Johansson', age: 41 },
+  { name: 'Jennifer Lawrence', age: 35 },
+  { name: 'Denzel Washington', age: 71 },
+  { name: 'Morgan Freeman', age: 88 },
+  { name: 'Cate Blanchett', age: 56 }
+] */

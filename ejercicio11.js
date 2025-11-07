@@ -19,18 +19,23 @@ function averageMovieDuration(movies) {
   // insert code
   let durations = []
   let k = 0
-  console.log(k)
+  // console.log(k)
   for (const i of movies) {
     durations[k] = i.duration
     k++
   }
-  console.log(durations)
+  // console.log(durations)
   // Hallamos la media de todas las duraciones recogidas en el array durations.
   let sum = 0
   for (let i = 0; i < durations.length; i++) {
     sum = sum + durations[i]
   }
-  console.log(sum)
-  console.log(sum / durations.length)
+  // console.log(sum)
+  console.log(
+    'El promedio de duracción de las películas es de: ' +
+      sum / durations.length +
+      ' minutos'
+  )
 }
 averageMovieDuration(movies)
+// El promedio de duracción de las películas es de: 139 minutos

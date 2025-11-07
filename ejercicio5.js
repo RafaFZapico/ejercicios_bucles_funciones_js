@@ -24,7 +24,7 @@ for (const i of albums) {
   totalduration = totalduration + i.duration
 }
 console.log('La duración total de las canciones es: ', totalduration)
-
+// La duración total de las canciones es:  472.73999999999995
 // otra forma para sumar las duraciones de las canciones
 let totsum = 0
 let j = 0
@@ -33,3 +33,4 @@ for (let i = 0; i < duration.length; i++) {
   j++
 }
 console.log('total suma= ', totsum)
+// total suma=  472.73999999999995

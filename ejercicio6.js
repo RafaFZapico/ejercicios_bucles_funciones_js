@@ -29,7 +29,6 @@ let v90 = 0
 let v00 = 0
 let v10 = 0
 for (const i of starWarsMovies) {
-  //console.log(i)
   if (i.releaseYear > 1969 && i.releaseYear < 1980) {
     decade70[v70] = i
     v70++

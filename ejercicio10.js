@@ -25,7 +25,7 @@ function getCapital(country) {
   for (const i in capitals) {
     if (country === i) {
       k = country
-      console.log(country, '.Su capital es:', capitals[i])
+      console.log(country + ' cuya capital es:', capitals[i])
     } /*else {
       return console.log('Este país no aparece en el listado')
     }*/
@@ -34,7 +34,10 @@ function getCapital(country) {
   }
   //console.log(k)
   if (k === 0) {
-    console.log(country, 'No aparece en el listado')
+    console.log('Lo siento, ' + country + ' no aparece en el listado')
   }
 }
+getCapital('Portugal')
+// Portugal cuya capital es: Lisbon
 getCapital('China')
+// Lo siento, China no aparece en el listado
